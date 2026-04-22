@@ -1,6 +1,6 @@
 # 🎓 Student Final Score Prediction — Linear Regression Models
 
-Yeh project 5 alag alag **Simple Linear Regression** models contain karta hai jo ek student ka **Final Score** predict karte hain — har model mein sirf **1 input feature** use hoti hai.
+This project contains 5 individual **Simple Linear Regression** models that predict a student's **Final Score** — each model uses only **1 input feature**.
 
 ---
 
@@ -13,6 +13,7 @@ Yeh project 5 alag alag **Simple Linear Regression** models contain karta hai jo
 ├── model3_internet_usage.py      # Model 3 — Internet Usage
 ├── model4_attendance.py          # Model 4 — Attendance
 ├── model5_gender.py              # Model 5 — Gender
+├── requirements.txt              # Required libraries
 └── README.md
 ```
 
@@ -22,9 +23,9 @@ Yeh project 5 alag alag **Simple Linear Regression** models contain karta hai jo
 
 | Column | Description |
 |--------|-------------|
-| `Hours_Studied` | Roz kitne ghante parhai ki |
-| `Sleep_Hours` | Roz kitne ghante soye |
-| `Internet_Usage` | Roz kitne ghante internet use kiya |
+| `Hours_Studied` | Daily study hours |
+| `Sleep_Hours` | Daily sleep hours |
+| `Internet_Usage` | Daily internet usage hours |
 | `Gender` | Male / Female |
 | `Study_Method` | Self Study / Coaching / Group Study |
 | `Attendance` | School attendance percentage |
@@ -44,31 +45,31 @@ Yeh project 5 alag alag **Simple Linear Regression** models contain karta hai jo
 
 ---
 
-## ⚙️ Har Model ka Flow
+## ⚙️ How Each Model Works
 
-Har `.py` file mein yeh steps hain:
+Every `.py` file follows the same steps:
 
-1. **Data Load** — CSV file se data load karo
-2. **Cleaning** — NaN values fill ya drop karo
-3. **X aur y** — Input aur output alag karo
+1. **Load Data** — Read CSV file
+2. **Cleaning** — Fill or drop NaN values
+3. **X and y** — Separate input and output
 4. **Train Test Split** — 70% train, 30% test
-5. **StandardScaler** — Data scale karo
-6. **LinearRegression** — Model train karo
-7. **R2 Score** — Model evaluate karo
-8. **joblib.dump** — Model save karo
-9. **joblib.load** — Model dobara load karo
-10. **Predict Function** — `input()` se value lo aur predict karo
+5. **StandardScaler** — Scale the data
+6. **LinearRegression** — Train the model
+7. **R2 Score** — Evaluate the model
+8. **joblib.dump** — Save the model
+9. **joblib.load** — Reload the saved model
+10. **Predict Function** — Take input and predict score
 
 ---
 
 ## 🚀 How to Run
 
-### Requirements install karo:
+### Install requirements:
 ```bash
-pip install pandas scikit-learn joblib
+pip install -r requirements.txt
 ```
 
-### Koi bhi model chalao:
+### Run any model:
 ```bash
 python model1_hours_studied.py
 python model2_sleep_hours.py
@@ -77,7 +78,7 @@ python model4_attendance.py
 python model5_gender.py
 ```
 
-### Input example:
+### Example:
 ```
 Enter Hours Studied: 7
 Predicted Final Score: 76.43
@@ -89,6 +90,7 @@ Predicted Final Score: 76.43
 
 ```
 pandas
+numpy
 scikit-learn
 joblib
 ```
@@ -106,7 +108,7 @@ joblib
 
 ## 📝 Notes
 
-- Dataset mein kuch missing values aur typos thay (`Femle`, `male`) jo automatically fix ho jaate hain
-- `Gender` column ko `LabelEncoder` se numeric banaya gaya hai (Model 5)
-- Sab models `StandardScaler` use karte hain
-- Saved model files same folder mein store hongi
+- Dataset had some missing values and typos (`Femle`, `male`) which are handled automatically during cleaning
+- `Gender` column is encoded using `LabelEncoder` (Model 5)
+- All models use `StandardScaler` for feature scaling
+- Saved model files are stored in the same folder
