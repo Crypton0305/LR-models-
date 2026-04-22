@@ -1,4 +1,4 @@
-# 🎓 Student Final Score Prediction — Linear Regression Models
+# Student Final Score Prediction — Linear Regression Models
 
 This project contains 5 individual **Simple Linear Regression** models that predict a student's **Final Score** — each model uses only **1 input feature**.
 
@@ -33,7 +33,7 @@ This project contains 5 individual **Simple Linear Regression** models that pred
 
 ---
 
-## 🤖 Models
+## Models
 
 | Model | Input Feature | Output |
 |-------|--------------|--------|
@@ -62,7 +62,7 @@ Every `.py` file follows the same steps:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Install requirements:
 ```bash
@@ -86,7 +86,7 @@ Predicted Final Score: 76.43
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 pandas
@@ -97,7 +97,7 @@ joblib
 
 ---
 
-## 👨‍💻 Tech Stack
+## Tech Stack
 
 - **Python 3.x**
 - **Pandas** — Data loading & cleaning
@@ -106,7 +106,7 @@ joblib
 
 ---
 
-## 📝 Notes
+## Notes
 
 - Dataset had some missing values and typos (`Femle`, `male`) which are handled automatically during cleaning
 - `Gender` column is encoded using `LabelEncoder` (Model 5)
