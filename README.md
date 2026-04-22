@@ -1,4 +1,4 @@
-# 🎓 Student Final Score Prediction — Linear Regression Models
+# Student Final Score Prediction — Linear Regression Models
 
 This project contains 5 individual **Simple Linear Regression** models that predict a student's **Final Score** — each model uses only **1 input feature**.
 
@@ -7,13 +7,13 @@ This project contains 5 individual **Simple Linear Regression** models that pred
 ## 📁 Project Structure
 
 ```
-├── data_for_ml.csv               # Dataset
-├── model1_hours_studied.py       # Model 1 — Hours Studied
-├── model2_sleep_hours.py         # Model 2 — Sleep Hours
-├── model3_internet_usage.py      # Model 3 — Internet Usage
-├── model4_attendance.py          # Model 4 — Attendance
-├── model5_gender.py              # Model 5 — Gender
-├── requirements.txt              # Required libraries
+├── data_for_ml.csv              
+├── model1_hours_studied.py      
+├── model2_sleep_hours.py         
+├── model3_internet_usage.py      
+├── model4_attendance.py          
+├── model5_gender.py              
+├── requirements.txt            
 └── README.md
 ```
 
@@ -33,7 +33,7 @@ This project contains 5 individual **Simple Linear Regression** models that pred
 
 ---
 
-## 🤖 Models
+## Models
 
 | Model | Input Feature | Output |
 |-------|--------------|--------|
@@ -62,7 +62,7 @@ Every `.py` file follows the same steps:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Install requirements:
 ```bash
@@ -86,7 +86,7 @@ Predicted Final Score: 76.43
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 pandas
@@ -97,7 +97,7 @@ joblib
 
 ---
 
-## 👨‍💻 Tech Stack
+## Tech Stack
 
 - **Python 3.x**
 - **Pandas** — Data loading & cleaning
@@ -106,7 +106,7 @@ joblib
 
 ---
 
-## 📝 Notes
+## Notes
 
 - Dataset had some missing values and typos (`Femle`, `male`) which are handled automatically during cleaning
 - `Gender` column is encoded using `LabelEncoder` (Model 5)
